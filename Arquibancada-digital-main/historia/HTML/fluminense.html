@@ -3,177 +3,603 @@
 
 <head>
 
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style1.css">
 
-      <title> Fluminense Football Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-      <meta charset="UTF-8">
-      <meta name="description" content="história do Fluminense">
-      <meta name="keywords" content="Fluminense,Futebol,história">
-      <meta name="author" content="João Pedro">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluminense Football Club</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="história do Fluminense">
+  <meta name="keywords" content="Fluminense,Futebol,história">
+  <meta name="author" content="João Pedro">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
 
 <div class="container">
-<div class="accordion" id="accordionExample">
-<div class="accordion-item">
-<h2 class="accordion-header">
 
-
+  
   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
 
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="pills-origem-tab" data-bs-toggle="pill" data-bs-target="#pills-origem" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Origem e Fundandor</button>
+    <li class="nav-item">
+      <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-origem">Origem e Fundandor</button>
     </li>
-    
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="pills-laranejiras-tab" data-bs-toggle="pill" data-bs-target="#pills-laranejiras" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Era laranjeiras(1902-1950)</button>
+
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-laranejiras">Era Laranjeiras (1902-1950)</button>
     </li>
-    
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="pills-maracana-tab" data-bs-toggle="pill" data-bs-target="#pills-maracana" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Era Maracanã(1950-1985)</button>
+
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-maracana">Era Maracanã (1950-1985)</button>
     </li>
-    
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="pills-seculoxxi-tab" data-bs-toggle="pill" data-bs-target="#pills-secxxi" type="button" role="tab" aria-controls="pills-seculoxxi" aria-selected="false" >Século XXI, O Time de guerreiros</button>
-     </li>
+
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-secxxi">Século XXI — O Time de Guerreiros</button>
+    </li>
+
   </ul>
+
+  <div class="tab-content">
+
+    <div class="tab-pane fade show active" id="pills-origem"> <!--origem-->
+
+      <div class="accordion" id="accordion-origem">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#origem1">
+
+              Fundação
+            
+            </button>
+          </h2>
+
+          <div id="origem1" class="accordion-collapse collapse show" data-bs-parent="#accordion-origem">
+            <div class="accordion-body">
+              
+              <p>Fundado em 21 de julho de 1902, a partir da iniciativa de Oscar Cox, um jovem anglo-brasileiro que havia tido contato com o futebol na Europa e decidiu apresentá-lo no Rio de Janeiro. A escolha do nome "Fluminense" foi uma homenagem aos nascidos no estado, com o nome derivado do latim flumen (rio)..</p>
+              <img src="fotos/osca_cox.jpeg" alt="Fundador do Fluminense" id="img-oscar">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#origem2">
+
+              Primeiros Anos e Identidade do Clube
+            
+            </button>
+          </h2>
+
+          <div id="origem2" class="accordion-collapse collapse" data-bs-parent="#accordion-origem">
+            <div class="accordion-body">
+
+              <p>Era um clube de elite, com foco em esportes como futebol, natação e remo. Seu primeiro uniforme era composto pelas cores cinza e branco.</p>
+              <img src="fotos/puni.jpeg" alt="Primeiro uniforme do Fluminense">
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#origem3">
+
+              Primeiros Jogos
+            
+            </button>
+          </h2>
+
+          <div id="origem3" class="accordion-collapse collapse" data-bs-parent="#accordion-origem">
+            <div class="accordion-body">
+
+              <p>O primeiro jogo foi disputado em 19 de outubro de 1902, contra o Rio Football Club, no campo do Payssandu, em Laranjeiras, com vitória do Fluminense por 8 a 0. Em 6 de setembro de 1903, aconteceu a estreia em jogos interestaduais, com três partidas no campo do Velódromo, em São Paulo: um empate na primeira e duas vitórias nas seguintes.</p>
+              <img src="fotos/pjogo.jpg" alt="Primeiro jogo do Fluminense">
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#origem4">
+
+              Mudança de Uniforme
+
+            </button>
+          </h2>
+
+          <div id="origem4" class="accordion-collapse collapse" data-bs-parent="#accordion-origem">
+            <div class="accordion-body">
+
+              <p>Em 15 de julho de 1904, após leitura de uma carta de Oscar Cox e Mário Rocha enviada da Inglaterra, o Fluminense trocou a camisa cinza e branca pela tricolor. A mudança ocorreu devido à dificuldade de encontrar tecido cinza no mercado. Assim, foram adotadas as cores encarnado, branco e verde.</p>
+              <img src="fotos/Uniforme_tricolor_em_1905.jpg" alt="Uniforme tricolor">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="tab-pane fade" id="pills-laranejiras">
+
+      <div class="accordion" id="accordion-laranjeiras"> <!--era laranejeiras-->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#laran1">
+              
+              Popularidade e Conquistas Iniciais
+
+            </button>
+          </h2>
+
+          <div id="laran1" class="accordion-collapse collapse show" data-bs-parent="#accordion-laranjeiras">
+            <div class="accordion-body">
+
+              <p>O Fluminense se tornou um dos clubes mais populares do Brasil graças às grandes conquistas nos gramados, além dos inúmeros serviços prestados ao esporte, civismo e cultura. Nos primórdios do futebol brasileiro, o clube se destacou com o tetracampeonato carioca de 1906 a 1909 e o tricampeonato de 1917 a 1919.</p>
+              <img src="" alt=""> <!--ganhando o campeonato-->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#laran2">
+              
+              Jogadores Marcantes do Início
+
+            </button>
+          </h2>
+
+          <div id="laran2" class="accordion-collapse collapse" data-bs-parent="#accordion-laranjeiras">
+            <div class="accordion-body">
+
+              <p>Nessa época, brilharam Henry Welfare, autor de 48 gols em 40 jogos, e Oswaldo Gomes, recordista com oito títulos cariocas e autor do primeiro gol da Seleção Brasileira.</p>
+              <img src="" alt=""> <!--foto do henry-->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#laran3">
+              
+              Estádio das Laranjeiras
+
+            </button>
+          </h2>
+
+          <div id="laran3" class="accordion-collapse collapse" data-bs-parent="#accordion-laranjeiras">
+            <div class="accordion-body">
+
+              <p>O clube possuía campo de jogo desde 1904 e, em 1919, construiu o Estádio das Laranjeiras para 18.000 pessoas, inaugurado durante o Campeonato Sul-Americano de Seleções. Em 1922, o estádio foi ampliado para 25.000 pessoas e sediou os Jogos Olímpicos Latino-Americanos e o Campeonato Sul-Americano, comemorando o Centenário da Independência do Brasil.</p>
+              <img src="fotos/Painel_na_Sala_de_Troféus.jpg" alt="Estádio de Laranjeiras">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#laran4">
+              
+              Preguinho e Primeiras Glórias Internacionais
+
+            </button>
+          </h2>
+
+          <div id="laran4" class="accordion-collapse collapse" data-bs-parent="#accordion-laranjeiras">
+            <div class="accordion-body">
+
+              <p>A partir da década de 1920, o Fluminense deixou de ser um clube apenas da elite, com o futebol se tornando mais popular entre todas as classes sociais. Nesse período, o multiatleta Preguinho brilhou, marcando o primeiro gol do Brasil em Copas do Mundo em 1930. O clube conquistou sua primeira taça internacional em 1928, a Taça Vulcain, contra o Sporting de Portugal.</p>
+              <img src="" alt=""> <!--conquistando a taça vulcain-->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#laran5">
+              
+             Profissionalização do Futebol
+
+            </button>
+          </h2>
+
+          <div id="laran5" class="accordion-collapse collapse" data-bs-parent="#accordion-laranjeiras">
+            <div class="accordion-body">
+
+              <p>O Fluminense foi um dos principais defensores da profissionalização do futebol brasileiro em 1933. E teve cinco jogadores representando o Brasil na Copa do Mundo de 1938, quando a seleção terminou em terceiro lugar.</p>
+              <img src="" alt=""> <!--jogadores que foram pra seleção-->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#laran6">
+              
+              Campanha Histórica de 1941 e Destaques Ofensivos em 1946
+
+            </button>
+          </h2>
+
+          <div id="laran6" class="accordion-collapse collapse" data-bs-parent="#accordion-laranjeiras">
+            <div class="accordion-body">
+
+              <ul>
+
+                <li>No Campeonato Carioca de 1941, o time marcou 106 gols em 28 jogos, com média de 3,78 por partida. O ataque dessa campanha tinha Pedro Amorim, Romeu Pellicciari, Tim, Rongo e Carreiro, sendo Rongo o artilheiro com 26 gols.</li>
+                <li>E em 1946, o Fluminense se destacou com Rodrigues, autor de 28 gols, e Ademir de Menezes, com 25. Nessa campanha, o time marcou 97 gols em 24 partidas, média de 4,04 por jogo.</li>
+              
+              </ul>
+              <img src="" alt=""> <!--elenco-->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#laran7">
+              
+              Reconhecimento Internacional e Fechamento do Ciclo
+
+            </button>
+          </h2>
+
+          <div id="laran7" class="accordion-collapse collapse" data-bs-parent="#accordion-laranjeiras">
+            <div class="accordion-body">
+
+              <ul>
+                <li>Entre 1902 e 1948, o Fluminense disputou 2.180 partidas em 20 esportes coletivos, com 1.558 vitórias, 145 empates e 473 derrotas.</li>
+                <li>Em 1949, o clube recebeu a Taça Olímpica do Comitê Olímpico Internacional por sua contribuição aos esportes olímpicos. Esse período encerra a era pré-Maracanã, marcando os primeiros 50 anos gloriosos do Fluminense antes da nova fase que começaria em 1950.</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#laran9">
+              
+              Títulos Antes da Era Maracanã
+
+            </button>
+          </h2>
+
+          <div id="laran9" class="accordion-collapse collapse" data-bs-parent="#accordion-laranjeiras">
+            <div class="accordion-body">
+
+              <p>Antes da Era Maracanã, o Fluminense conquistou 15 Campeonatos Cariocas, com destaque entre 1935 e 1941.
+                 Nesse período, ganhou também:
+                <ul>
+                      <li>Torneio Aberto de 1935</li>
+
+                      <li>Torneio Municipal de 1938</li>
+
+                      <li>Torneio Extra de 1941</li>
+
+                      <li>Torneios Início de 1940 e 1941</li>
+                </ul>
+                O clube liderava o Torneio Rio-São Paulo de 1940 quando a competição foi interrompida.</p>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
   
-  <div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane fade show active" id="pills-origem" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+    <div class="tab-pane fade" id="pills-maracana"> <!-- era maracana-->
+     
+       <div class="accordion" id="accordion-maracana">
+  
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#maracana1">
 
-   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Fundação
-      </button>
-    </h2>
+          Primeiros Títulos no Maracanã (Início dos anos 1950)
 
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion2">
-      <div class="accordion-body">
-       
-        <p>Fundado em 21 de julho de 1902, a partir da iniciativa de Oscar Cox, um jovem anglo-brasileiro que havia tido contato com o futebol na Europa e decidiu apresentá-lo no Rio de Janeiro. A escolha do nome "Fluminense" foi uma homenagem aos nascidos no estado, com o nome derivado do latim flumen (rio).</p>
-        <img src="fotos/osca_cox.jpeg" alt="Fundador do Fluminense">
+        </button>
+      </h2>
+
+      <div id="maracana1" class="accordion-collapse collapse show" data-bs-parent="#accordion-maracana">
+        <div class="accordion-body">
+
+          <p>O Fluminense conquistou seu primeiro título no Maracanã em 1951, vencendo o Campeonato Carioca. O time era formado por muitos jovens das categorias de base, apelidados ironicamente de “Timinho” pelos rivais. Esses jogadores se destacaram posteriormente, inclusive na Seleção Brasileira campeã do Campeonato Pan-Americano de 1952 no Chile.</p>
+          <img src="" alt=""><!--elenco de 51-->
+
+        </div>
       </div>
     </div>
-  </div>
-  
- <div class="accordion-item">
-    <h2 class="accordion-header">
 
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-       Primeiros Anos e Identidade do Clube
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#maracana2">
+
+          Copa Rio Internacional de 1952
+
+        </button>
+      </h2>
+
+      <div id="maracana2" class="accordion-collapse collapse" data-bs-parent="#accordion-maracana">
+        <div class="accordion-body">
+
+          <p>Em 1952, o Fluminense conquistou de forma invicta a Copa Rio Internacional, considerada o embrião da Copa do Mundo de Clubes da FIFA. O time era comandado por Zezé Moreira e contava com Castilho, Píndaro, Pinheiro, Bigode, Didi, Telê e Orlando Pingo de Ouro. Na final, venceu o Corinthians por 2 a 0 no primeiro jogo e empatou em 2 a 2 no segundo, garantindo o título.
+          <img src="" alt=""> <!--elenco de 52-->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#maracana3">
+
+          Conquistas do Período 1951–1960
+
+        </button>
+      </h2>
+
+      <div id="maracana3" class="accordion-collapse collapse" data-bs-parent="#accordion-maracana">
+        <div class="accordion-body">
+
+          <p>Entre 1951 e 1954, o Fluminense conquistou a Copa Rio de 1952 e o Carioca de 1951, além de vices estaduais em 1952 e 1953 e vice no Rio-São Paulo de 1954. Entre 1956 e 1960, venceu dois títulos do Torneio Rio-São Paulo (1957 invicto e 1960 com uma derrota) e o Carioca de 1959. Na Taça Brasil de 1960, foi eliminado na semifinal com um gol sofrido aos 44 minutos do segundo tempo.</p>
+          <img src="" alt="">
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#maracana4">
+
+          Grandes Jogadores da Década de 1950
+
+        </button>
+      </h2>
+
+      <div id="maracana4" class="accordion-collapse collapse" data-bs-parent="#accordion-maracana">
+        <div class="accordion-body">
+          <p>Castilho, Pinheiro e Telê foram a base da equipe por toda a década de 1950. Na segunda metade da década, brilharam Jair Marinho, Altair, Escurinho e Waldo — o maior artilheiro da história do clube.</p>
+        
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#maracana5">
+
+          Título Brasileiro de 1970
+
+        </button>
+      </h2>
+
+      <div id="maracana5" class="accordion-collapse collapse" data-bs-parent="#accordion-maracana">
+        <div class="accordion-body">
+          <p>Em 1970, o Fluminense conquistou pela primeira vez o Campeonato Brasileiro (Taça de Prata). O time garantiu o título ao empatar com o Atlético Mineiro na última rodada. Os destaques eram Galhardo, Assis, Denílson, Samarone (primeiro camisa 10 a ganhar a Bola de Prata), Flávio, Mickey, Lula e os tricampeões mundiais Félix e Marco Antônio.</p>
+          <img src="" alt=""> <!--elenco de 70, levantando a taça possivelmente-->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#maracana6">
+
+          A Máquina Tricolor (1975–1977)
+
+        </button>
+      </h2>
+
+      <div id="maracana6" class="accordion-collapse collapse" data-bs-parent="#accordion-maracana">
+        <div class="accordion-body">
+          <ul>
+
+            <li>Entre 1975 e 1977, o Fluminense viveu a era da “Máquina Tricolor”.</li>
+            <li>Foi bicampeão carioca, semifinalista do Brasileirão e vencedor de torneios internacionais amistosos.</li>
+            <li>O elenco tinha Félix, Toninho, Carlos Alberto Torres, Miguel, Edinho, Rodrigues Neto, Marinho Chagas, Carlos Alberto Pintinho, Paulo César Caju, Gil, Doval e Dirceu, liderados por Rivellino.</li>
+            <li>Rivellino foi eleito para a Seleção Sul-Americana do Século XX.</li>
+          
+          </ul>
+          <img src="" alt=""> <!--elenco-->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#maracana7">
+
+          Tricampeonato Carioca e Título Brasileiro de 1984
+
+        </button>
+      </h2>
+
+      <div id="maracana7" class="accordion-collapse collapse" data-bs-parent="#accordion-maracana">
+        <div class="accordion-body">
+
+          <p>Em 1984, o Fluminense foi campeão brasileiro e tricampeão carioca (1983–1985). Destaques: Romerito (melhor da América do Sul em 1985), Assis, Washington, Tato, Paulo Vítor, Ricardo Gomes, Branco, Jandir e Deley. Na final do Brasileirão contra o Vasco, venceu por 1 a 0 (gol de Romerito) e empatou o segundo jogo por 0 a 0.</p>
+          <img src="" alt="">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+   <div class="tab-pane fade" id="pills-secxxi">
+
+ <div class="accordion" id="accordion-secxxi">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#secxxi1">
+
+        Era de Ouro Recente (2007–2012)
+
       </button>
     </h2>
 
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="secxxi1" class="accordion-collapse collapse show" data-bs-parent="#accordion-secxxi">
       <div class="accordion-body">
 
-       Era um clube de elite, com foco em esportes como futebol, natação e remo. Seu primeiro uniforme era composto pelas cores cinza e branco.
-      <!--foto do unfirmo cinza-->
+        <p>Entre 2007 e 2012, o Fluminense viveu uma fase extremamente vitoriosa, conquistando dois Campeonatos Brasileiros, uma Copa do Brasil e um Campeonato Carioca, além de alcançar finais continentais. Destaques como Conca, Thiago Silva, Fred, Cavalieri, Deco, Washington e Rafael Sóbis marcaram época. O ano de 2012 é considerado o melhor do Flu no século XXI.</p>
+        <img src="" alt="">
+
       </div>
     </div>
   </div>
 
   <div class="accordion-item">
     <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#secxxi2">
 
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetres" aria-expanded="false" aria-controls="collapsetres">
-        Primeiros Jogos
+        Primeira Liga de 2016
+
       </button>
     </h2>
 
-    <div id="collapsetres" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="secxxi2" class="accordion-collapse collapse" data-bs-parent="#accordion-secxxi">
       <div class="accordion-body">
 
-        <p>O primeiro jogo foi disputado em 19 de outubro de 1902, contra o Rio Football Club, no campo do Payssandu, em Laranjeiras, com vitória do Fluminense por 8 a 0. Em 6 de setembro de 1903, aconteceu a estreia em jogos interestaduais, com três partidas no campo do Velódromo, em São Paulo: um empate na primeira e duas vitórias nas seguintes.</p>
-        
+        <p>Em 2016, o Fluminense conquistou a Primeira Liga, contando com jogadores como Diego Cavalieri, Gum, Cícero, Gerson e Gustavo Scarpa.</p>
+        <img src="" alt="">
+
       </div>
     </div>
   </div>
-  
-  
-  </div>
-  <div class="tab-pane fade" id="pills-laranejiras" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-    
-        <ul>
-            <li>O Fluminense se tornou um dos clubes mais populares do Brasil graças às grandes conquistas nos gramados, apesar dos inúmeros serviços prestados ao esporte, civismo e cultura.</li>
-            <li>Nos primórdios do futebol brasileiro, o clube se destacou com o tetracampeonato carioca de 1906 a 1909 e o tricampeonato de 1917 a 1919.</li>
-            <li>Nessa época, brilharam Henry Welfare, autor de 48 gols em 40 jogos, e Oswaldo Gomes, recordista com oito títulos cariocas e autor do primeiro gol da Seleção Brasileira.</li>
-            <li>O clube possuía campo de jogo desde 1904 e, em 1919, construiu o Estádio das Laranjeiras para 18.000 pessoas, inaugurado durante o Campeonato Sul-Americano de Seleções.</li>
-            <li>Em 1922, o estádio foi ampliado para 25.000 pessoas e sediou os Jogos Olímpicos Latino-Americanos e o Campeonato Sul-Americano, comemorando o Centenário da Independência do Brasil.</li>
-            <li>A partir da década de 1920, o Fluminense deixou de ser um clube apenas da elite, com o futebol se tornando mais popular entre todas as classes sociais.</li>
-            <li>Nesse período, o multiatleta Preguinho brilhou, marcando o primeiro gol do Brasil em Copas do Mundo em 1930.</li>
-            <li>O clube conquistou sua primeira taça internacional em 1928, a Taça Vulcain, contra o Sporting de Portugal.</li>
-            <li>O Fluminense foi um dos principais defensores da profissionalização do futebol brasileiro em 1933.</li>
-            <li>Antes da Era Maracanã, o Fluminense conquistou 15 Campeonatos Cariocas, com destaque entre 1935 e 1941.</li>
-            <li>Durante esse período, ganhou o Torneio Aberto de 1935, o Torneio Municipal de 1938, o Torneio Extra de 1941 e os Torneios Início de 1940 e 1941.</li>
-            <li>O clube liderava o Torneio Rio-São Paulo de 1940 quando ele foi interrompido.</li>
-            <li>O Fluminense teve cinco jogadores representando o Brasil na Copa do Mundo de 1938, quando a seleção ficou em terceiro lugar.</li>
-            <li>No Campeonato Carioca de 1941, o time marcou 106 gols em 28 jogos, com média de 3,78 por partida.</li>
-            <li>O ataque dessa campanha foi formado por Pedro Amorim, Romeu Pellicciari, Tim, Rongo e Carreiro, com Rongo sendo o artilheiro com 26 gols.</li>
-            <li>Em 1946, o Fluminense teve destaque ofensivo com Rodrigues, que marcou 28 gols, e Ademir de Menezes, com 25.</li>
-            <li>Nessa campanha, o time fez 97 gols em 24 partidas, média de 4,04 por jogo.</li>
-            <li>Na década de 1940, o clube ainda conquistou o Torneio Início em 1943 e o Torneio Municipal de 1948, decidido com um gol de bicicleta de Orlando Pingo de Ouro.</li>
-            <li>Foi vice-campeão carioca em 1943 e 1949.</li>
-            <li>Entre 1902 e 1948, o Fluminense disputou 2.180 partidas em 20 esportes coletivos, com 1.558 vitórias, 145 empates e 473 derrotas.</li>
-            <li>Em 1949, o clube recebeu a Taça Olímpica do Comitê Olímpico Internacional por sua contribuição aos esportes olímpicos.</li>
-            <li>Esse período encerra a era pré-Maracanã, marcando os primeiros 50 anos gloriosos do Fluminense antes da chegada de uma nova fase no futebol carioca a partir de 1950.</li>
-        </ul>
 
-  </div>
-  <div class="tab-pane fade" id="pills-maracana" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-    
-        <ul>
-            <li>O Fluminense conquistou seu primeiro título no Maracanã em 1951, vencendo o Campeonato Carioca.</li>
-            <li>O time, formado por muitos jovens das categorias de base, foi ironicamente apelidado de "Timinho" pelos rivais.</li>
-            <li>Esses jogadores se destacaram posteriormente, inclusive na Seleção Brasileira campeã do Campeonato Pan-Americano de 1952 no Chile, a primeira grande conquista do Brasil no exterior.</li>
-            <li>Em 1952, o Fluminense conquistou de forma invicta a Copa Rio Internacional, considerada o embrião da Copa do Mundo de Clubes da FIFA.</li>
-            <li>O time era comandado por Zezé Moreira e contava com Castilho, Píndaro, Pinheiro, Bigode, Didi, Telê e Orlando Pingo de Ouro.</li>
-            <li>Na final, venceu o Corinthians por 2 a 0 no primeiro jogo e empatou em 2 a 2 no segundo, ambos no Maracanã, garantindo o título.</li>
-            <li>Em 1957, o Fluminense conquistou o Torneio Rio-São Paulo, invicto, e em 1960 voltou a vencer a competição, com apenas uma derrota.</li>
-            <li>O time de 1951 a 1954 foi campeão da Copa Rio de 1952 e do Carioca de 1951, além de vice-campeão carioca em 1952 e 1953, e vice do Rio-São Paulo em 1954.</li>
-            <li>Entre 1956 e 1960, além dos dois títulos do Rio-São Paulo, o Fluminense conquistou o Campeonato Carioca de 1959 e foi vice em 1956, 1957 e 1960.</li>
-            <li>Na Taça Brasil de 1960, foi eliminado na semifinal com um gol sofrido aos 44 minutos do segundo tempo.</li>
-            <li>Jogadores como Castilho, Pinheiro e Telê foram a base da equipe durante toda a década de 1950, enquanto Jair Marinho, Altair, Escurinho e Waldo brilharam na segunda metade, sendo Waldo o maior artilheiro da história do clube.</li>
-            <li>Em 1970, o Fluminense conquistou pela primeira vez o Campeonato Brasileiro (Taça de Prata), com um time equilibrado e de jogo coletivo.</li>
-            <li>O clube classificou-se para o quadrangular final e sagrou-se campeão ao empatar com o Atlético Mineiro na última rodada, garantindo também vaga na Libertadores de 1971.</li>
-            <li>Os destaques dessa equipe eram os zagueiros Galhardo e Assis, o volante Denílson, o meia Samarone (primeiro camisa 10 a ganhar a Bola de Prata da revista Placar), os atacantes Flávio e Mickey, o ponta-esquerda Lula e os tricampeões mundiais Félix e Marco Antônio.</li>
-            <li>Entre 1975 e 1977, o Fluminense viveu a era da “Máquina Tricolor”, bicampeão carioca, semifinalista do Campeonato Brasileiro e vencedor de torneios internacionais amistosos.</li>
-            <li>O elenco contava com Félix, Toninho, Carlos Alberto Torres, Miguel, Edinho, Rodrigues Neto, Marinho Chagas, Carlos Alberto Pintinho, Paulo César Caju, Gil, Doval e Dirceu, comandados por Roberto Rivellino.</li>
-            <li>Rivellino foi eleito para a Seleção de Futebol da América do Sul do Século XX.</li>
-            <li>Em 1984, o Fluminense foi campeão brasileiro e tricampeão carioca entre 1983 e 1985.</li>
-            <li>Os destaques eram o meia paraguaio Romerito, eleito o melhor jogador da América do Sul em 1985, a dupla Assis e Washington, o ponta-esquerda Tato, o goleiro Paulo Vítor, Ricardo Gomes, Branco, Jandir e Deley, sob o comando de Carlos Alberto Parreira.</li>
-            <li>Nas finais do Brasileirão de 1984 contra o Vasco, venceu por 1 a 0 com gol de Romerito e empatou por 0 a 0, conquistando o título nacional.</li>
-        </ul>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#secxxi3">
 
-  </div>
-  <div class="tab-pane fade" id="pills-seculoxxi" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+        Grandes Conquistas Recentes (2022–2024)
 
-        <ul>
-            <li>O Maracanã passou por reformas e reduziu sua capacidade, enquanto o Campeonato Brasileiro adotou o formato de pontos corridos em 2003.</li>
-            <li>Entre 2007 e 2012, o Fluminense viveu uma fase vitoriosa, conquistando dois Campeonatos Brasileiros, uma Copa do Brasil e um Carioca, além de alcançar duas finais continentais.</li>
-            <li>Jogadores como Darío Conca, Thiago Silva e Fred foram os grandes destaques desse período, com diversas premiações individuais.</li>
-            <li>Outros nomes marcantes foram Diego Cavalieri, Deco, Thiago Neves, Rafael Sóbis e Washington, com o ano de 2012 sendo eleito o melhor do Fluminense no século XXI.</li>
-            <li>Em 2016, o clube conquistou a Primeira Liga, com jogadores como Diego Cavalieri, Gum, Cícero e jovens talentos como Gerson e Gustavo Scarpa.</li>
-            <li>Em 2022, o Fluminense venceu o Campeonato Carioca, ficou em terceiro na Copa do Brasil e no Brasileirão, com Germán Cano artilheiro das três competições e autor de 44 gols no ano.</li>
-            <li>Em 2023, o Fluminense conquistou o bicampeonato carioca e venceu a Copa Libertadores da América contra o Boca Juniors no Maracanã.</li>
-            <li>Em 2024, venceu a Recopa Sul-Americana sobre a LDU Quito, também no Maracanã.</li>
-            <li>Até julho de 2025, o clube somava 6.110 jogos, com mais de 3.000 vitórias e 58,15% de aproveitamento histórico.</li>
-            <li>O Fluminense já enfrentou 618 adversários e jogou em 51 países, com cinco finais internacionais disputadas neste século.</li>
-            <li>Em 2025, o clube ficou em quarto lugar no Mundial de Clubes, melhor colocação de um time não europeu, com Thiago Silva e John Árias na seleção do torneio.</li>
-            <li>Segundo levantamento da revista Placar de 2017, o Fluminense tem o segundo melhor aproveitamento brasileiro contra times europeus (65,7%).</li>
-            <li>Em 2021, ao vencer o River Plate no seu aniversário de 120 anos, tornou-se o segundo clube brasileiro a derrotar Boca Juniors e River Plate em seus estádios pela Libertadores.</li>
-            <li>Depois de 6 anos sem nenhuma conquista, o tricolor das laranjeiras volta a brilhar conquistando em 2022 o campeonato carioca. E, no ano seguinte em 2023, ganhou novamente o campeonato carioca e a tão sonhada Taça Libertadores da América. Que em 2024 possibilitou o time de guerreiros participar da Recopa Sul-Americana. Ganhando-a em cima do Clube LDU de Quito.</li>
-            <li>Em 2025, fez um feito histótico ficando entre os 4 melhores times do mundo. Perdendo apenas para Chelsea, Paris Saint-German e Real Madrid.</li>
-        </ul>
+      </button>
+    </h2>
+
+    <div id="secxxi3" class="accordion-collapse collapse" data-bs-parent="#accordion-secxxi">
+      <div class="accordion-body">
+
+        <p><strong>2022:</strong> O Fluminense venceu o Campeonato Carioca e foi 3º colocado tanto na Copa do Brasil quanto no Brasileirão. Germán Cano foi artilheiro das três competições e fechou o ano com 44 gols.</p>
+        <p><strong>2023:</strong> O clube conquistou novamente o Campeonato Carioca e alcançou o maior título de sua história: a Copa Libertadores da América, derrotando o Boca Juniors no Maracanã.</p>
+        <p><strong>2024:</strong> O Fluminense venceu a Recopa Sul-Americana contra a LDU Quito, mais uma vez no Maracanã.</p>
+        <img src="" alt="">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#secxxi4">
+
+        Números Históricos até 2025
+
+      </button>
+    </h2>
+
+    <div id="secxxi4" class="accordion-collapse collapse" data-bs-parent="#accordion-secxxi">
+      <div class="accordion-body">
+
+        <p>Até julho de 2025, o Fluminense somava 6.110 jogos oficiais, ultrapassando 3.000 vitórias e alcançando 58,15% de aproveitamento histórico. Enfrentou 618 adversários em 51 países e disputou cinco finais internacionais neste século.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#secxxi5">
+
+        Mundial de Clubes de 2025
         
-        </div>
+      </button>
+    </h2>
+
+    <div id="secxxi5" class="accordion-collapse collapse" data-bs-parent="#accordion-secxxi">
+      <div class="accordion-body">
+        
+        <p>Em 2025, o Fluminense ficou em quarto lugar no Mundial de Clubes, registrando a melhor campanha de um clube não europeu. Thiago Silva e John Árias foram eleitos para a seleção do torneio.</p>
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#secxxi6">
+
+        Desempenho Internacional
+
+      </button>
+    </h2>
+
+    <div id="secxxi6" class="accordion-collapse collapse" data-bs-parent="#accordion-secxxi">
+      <div class="accordion-body">
+
+        <p>Segundo levantamento da revista Placar em 2017, o Fluminense possui o segundo melhor desempenho brasileiro contra clubes europeus, com aproveitamento de 65,7%.</p>
+        <p>Em 2021, ao vencer o River Plate na Argentina no seu aniversário de 120 anos, tornou-se o segundo clube brasileiro a derrotar Boca Juniors e River Plate como visitante na Libertadores.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#secxxi7">
+
+        Feito Histórico em 2025
+
+      </button>
+    </h2>
+
+    <div id="secxxi7" class="accordion-collapse collapse" data-bs-parent="#accordion-secxxi">
+      <div class="accordion-body">
+
+        <p>Em 2025, o Fluminense alcançou a inédita marca de se colocar entre os quatro melhores times do mundo, sendo superado apenas por Chelsea, Paris Saint-Germain e Real Madrid.</p>
+      
+      </div>
+
+    </div>
+  </div>
 
 </div>
-    
-</body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<div id="zoom-overlay">
+  <div id="zoom-content">
+    <img id="zoom-img" src="">
+  </div>
+</div>
+
+<script src="JS/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
