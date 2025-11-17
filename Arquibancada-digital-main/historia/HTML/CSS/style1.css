@@ -10,7 +10,7 @@
 
 /* Fundo e texto */
 body {
-  background: var(--bg);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   color: var(--text);
   font-family: "Inter", Arial, sans-serif;
   transition: background .3s ease, color .3s ease;
