@@ -137,6 +137,10 @@ body {
   max-width: 650px;
 }
 
+#img-gigas {
+  max-width: 380px !important;
+}
+
 /* Vertical */
 .img-vertical {
   max-height: 650px;
