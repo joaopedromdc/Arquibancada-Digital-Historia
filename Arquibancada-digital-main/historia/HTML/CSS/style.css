@@ -236,3 +236,119 @@ body {
   transform: scale(1.15);
   background: #e2e2e2;
 }
+.cabecalho {
+  background: #050000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 30px;
+  height: auto;
+  flex-wrap: wrap; /* permite quebrar linha no mobile */
+  gap: 10px;
+}
+
+/* TÍTULO */
+.titulo-site {
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap; /* evita quebra feia no mobile */
+  justify-content: center;
+}
+
+.nav-item {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: .25s;
+}
+
+/* Underline moderno */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0%;
+  background: #00ffaa;
+  transition: width .3s ease;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: 100%;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+/* Container do botão voltar */
+.btn-voltar-container {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+/* Botão elegante */
+.btn-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #111;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: .25s;
+}
+
+.btn-voltar:hover {
+  background: #00ffaa;
+  color: #000;
+  transform: translateX(-3px);
+}
+
+/* Responsivo */
+@media (max-width: 750px) {
+
+  .cabecalho {
+    flex-direction: column;        /* TÍTULO EM CIMA */
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    gap: 12px;
+  }
+
+  .nav-links {
+    justify-content: center;       /* LINKS CENTRALIZADOS */
+    gap: 18px;
+  }
+
+  .titulo-site {
+    font-size: 1.7rem;
+  }
+
+  .nav-item {
+    font-size: 1rem;
+  }
+
+
+  .btn-voltar-container {
+    padding: 0 15px;
+  }
+}
