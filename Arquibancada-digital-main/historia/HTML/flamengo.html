@@ -5,6 +5,7 @@
 
         <link rel="stylesheet" href="CSS/style.css">
         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         
         <title>Clube de Regatas do Flamengo</title>
@@ -24,23 +25,42 @@
     </head>
 
     <body>
+
+            <header class="cabecalho">
+    <h1 class="titulo-site">Arquibancada Digital</h1>
+
+    <nav class="nav-links">
+        <a href="fluminense.html" class="nav-item active">Fluminense</a>
+        <a href="flamengo.html" class="nav-item">Flamengo</a>
+        <a href="vasco.html" class="nav-item">Vasco</a>
+        <a href="botafogo.html" class="nav-item">Botafogo</a>
+    </nav>
+</header>
+
+<div class="btn-voltar-container">
+  <a href="index.html" class="btn-voltar">
+    <i class="fas fa-arrow-left"></i>
+    Voltar para Página Inicial
+  </a>
+</div>
+
         <div class="container">
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item">
                     <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-origem">Origem e Fundação</button>
                 </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-primeiraera">Primeira Era (1895-1919)</button>
+                
+                <!-- Dropdown para Eras Históricas -->
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Eras Históricas</button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" data-bs-toggle="pill" data-bs-target="#pills-primeiraera">Primeira Era (1895-1919)</button></li>
+                        <li><button class="dropdown-item" data-bs-toggle="pill" data-bs-target="#pills-consolidacao">Consolidação (1920-1979)</button></li>
+                        <li><button class="dropdown-item" data-bs-toggle="pill" data-bs-target="#pills-eraouro">Era de Ouro (1980-1999)</button></li>
+                        <li><button class="dropdown-item" data-bs-toggle="pill" data-bs-target="#pills-secxxi">Século XXI — Reconstrução e Glória</button></li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-consolidacao">Consolidação (1920-1979)</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-eraouro">Era de Ouro (1980-1999)</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-secxxi">Século XXI — Reconstrução e Glória</button>
-                </li>
+
                 <li class="nav-item">
                     <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-eraatual">Era Atual (2019-2025)</button>
                 </li>
@@ -522,6 +542,8 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
 
                 <!-- HINO DO FLAMENGO -->
                 <div class="tab-pane fade" id="pills-hino">
@@ -761,6 +783,7 @@
             </div>
         </div>
 
+        <script src="JS/drop.js"></script>
         <script src="JS/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
